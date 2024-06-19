@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>General</title>
+    <script src="assets/js/layout.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl position-relative d-flex p-0">
+        <div class="sidebar">
+            <nav class="navbar navbar-light navigation-vertical">
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="navbar-brand mb-3">
+                    <img src="img/logo.png">
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fas fa-times"></i>
+                </a>
+                <button class="btn primary-btn"><i class="fas fa-plus"></i> Create</button>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fas fa-chart-pie"></i> Overview</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-calendar-alt"></i> Calendar</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item"><i class="fas fa-hotel"></i> Rental</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-file"></i> Leasing</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-users"></i> People</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-tasks"></i> Tasks & Maintenance</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-hand-holding-usd"></i> Accounting</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-volume-down"></i> Communications</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-edit"></i> Notes</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-folder-open"></i> Files</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-clipboard-list"></i> Reports</a>
+                </div>
+
+                <div class="navbar-nav w-100 bottom-nav">
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-rocket"></i> Get Started</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-bell"></i> Notification</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-question-circle"></i> Help</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#" class="nav-item nav-link"><img src="img/user.jpg"> Dave Kaminski</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content dashboard-right-col">
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <p class="wlcm-txt"><span>Hi Dave,</span> Welcome Back!</p>
+                <div class="navbar-nav align-items-center ms-auto top-bar-navigation mob-hide">
+                    <select>
+                        <option>Property</option>
+                        <option>Property</option>
+                        <option>Property</option>
+                    </select>
+
+                    <select>
+                        <option>Portfolio</option>
+                        <option>Portfolio</option>
+                        <option>Portfolio</option>
+                    </select>
+
+                    <select>
+                        <option>View As</option>
+                        <option>View As</option>
+                        <option>View As</option>
+                    </select>
+
+                    <button class="btn"><i class="fas fa-cog"></i> Customize Dashboard</button>
+                </div>
+            </nav>
+
+            <div class="container mob-show">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="navbar-nav align-items-center ms-auto top-bar-navigation">
+                        <select>
+                            <option>Property</option>
+                            <option>Property</option>
+                            <option>Property</option>
+                        </select>
+    
+                        <select>
+                            <option>Portfolio</option>
+                            <option>Portfolio</option>
+                            <option>Portfolio</option>
+                        </select>
+
+                        <select>
+                            <option>View As</option>
+                            <option>View As</option>
+                        <option>View As</option>
+                        </select>
+                      </div>
+                      <button class="btn w-100"><i class="fas fa-cog"></i> Customize Dashboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid pt-4 px-4">
+                
+              <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="position-relative mx-n4 mt-n4">
+                        <div class="profile-wid-bg profile-setting-img">
+                            <img src="img/profile-bg.jpg" class="profile-wid-img" alt="">
+                            <div class="overlay-content">
+                                <div class="text-end p-3">
+                                    <div class="p-0 ms-auto rounded-circle profile-photo-edit">
+                                        <input id="profile-foreground-img-file-input" type="file" class="profile-foreground-img-file-input">
+                                        <label for="profile-foreground-img-file-input" class="profile-photo-edit btn btn-light">
+                                            <i class="fas fa-image"></i> Change Cover
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xxl-3">
+                            <div class="card mt-n5">
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <div class="profile-user position-relative d-inline-block mx-auto  mb-4">
+                                            <img src="img/logo.png" class="rounded-circle avatar-xl img-thumbnail user-profile-image" alt="user-profile-image">
+                                            <div class="avatar-xs p-0 rounded-circle profile-photo-edit">
+                                                <input id="profile-img-file-input" type="file" class="profile-img-file-input">
+                                                <label for="profile-img-file-input" class="profile-photo-edit avatar-xs">
+                                                    <span class="avatar-title rounded-circle bg-light text-body">
+                                                       <i class="fas fa-camera"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h5 class="mb-1">Company Name</h5>
+                                        <p class="text-muted mb-0">Category of Company</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-5">
+                                        <div class="flex-grow-1">
+                                            <h5 class="card-title mb-0">Complete Your Profile</h5>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><i class="fas fa-edit"></i> Edit</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress animated-progress custom-progress progress-label">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="label">30%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="flex-grow-1">
+                                            <h5 class="card-title mb-0">Portfolio</h5>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <a href="javascript:void(0);" class="badge bg-light text-primary fs-12"><i class="fas fa-plus"></i> Add</a>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-flex">
+                                        <div class="avatar-xs d-block flex-shrink-0 me-3">
+                                            <span class="avatar-title rounded-circle fs-16 bg-primary">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="fb" placeholder="Facebook Page" value="">
+                                    </div>
+                                    <div class="mb-3 d-flex">
+                                        <div class="avatar-xs d-block flex-shrink-0 me-3">
+                                            <span class="avatar-title rounded-circle fs-16 bg-danger">
+                                                <i class="fab fa-instagram"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="instaName" placeholder="Instagra Handle" value="">
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="avatar-xs d-block flex-shrink-0 me-3">
+                                            <span class="avatar-title rounded-circle fs-16 bg-success">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="linkedin" placeholder="Linkedin Page" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-->
+                        <div class="col-xxl-9">
+                            <div class="card mt-xxl-n5">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs-custom rounded card-header-tabs border-bottom-0" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#personalDetails" role="tab">
+                                                Company Details
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#changePassword" role="tab">
+                                                Change Password
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#loginhistory" role="tab">
+                                                Login History
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#experience" role="tab">
+                                                Experience
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#privacy" role="tab">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body p-4">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="personalDetails" role="tabpanel">
+                                            <form action="javascript:void(0);">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="businessnameInput" class="form-label">Business Name</label>
+                                                            <input type="text" class="form-control" id="businessnameInput" placeholder="Business Name" value="">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                       <div class="mb-3">
+                                                            <label for="emailInput" class="form-label">Email Address</label>
+                                                            <input type="email" class="form-control" id="emailInput" placeholder="Email Address" value="">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="phonenumberInput" class="form-label">Phone Number</label>
+                                                            <input type="text" class="form-control" id="phonenumberInput" placeholder="Email Address" value="">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="email1Input" class="form-label">Secondary Email</label>
+                                                            <input type="email" class="form-control" id="email1Input" placeholder="Secondary Email" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="mobile-no" class="form-label">Mobile Number</label>
+                                                            <input type="text" class="form-control" id="mobile-no" placeholder="Mobile Number" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="whatsapp-no" class="form-label">Whatsapp Number</label>
+                                                            <input type="text" class="form-control" id="whatsapp-no" placeholder="Whatsapp Number" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="website" class="form-label">Website</label>
+                                                            <input type="text" class="form-control" id="website" placeholder="Website" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="address-line-1" class="form-label">Address Line 1</label>
+                                                            <input type="text" class="form-control" id="address-line-1" placeholder="Address Line 1" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="address-line-2" class="form-label">Address Line 2</label>
+                                                            <input type="text" class="form-control" id="address-line-2" placeholder="Address Line 2" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="country" class="form-label">Country</label>
+                                                            <input type="text" class="form-control" id="country" placeholder="Country" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="timezone" class="form-label">Timezone</label>
+                                                            <input type="text" class="form-control" id="timezone" placeholder="Timezone" value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12"><hr></div>
+
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label for="tax" class="form-label">Tax/GST Number</label>
+                                                            <input type="text" class="form-control" id="tax" placeholder="Tax/GST Number" value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12"><hr></div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="lead-date" class="form-label">Lead Date</label>
+                                                            <input type="date" class="form-control" id="lead-date" placeholder="Lead Date" value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="lead-source" class="form-label">Lead Source</label>
+                                                            <input type="text" class="form-control" id="lead-source" placeholder="Lead Source" value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="agent-name" class="form-label">Agent Name</label>
+                                                            <input type="text" class="form-control" id="agent-name" placeholder="Agent Name" value="">
+                                                        </div>
+                                                    </div>
+
+                                                     <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label for="commision-slab" class="form-label">Commision Slab</label>
+                                                            <input type="text" class="form-control" id="commision-slab" placeholder="Commision Slab" value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3 pb-2">
+                                                            <label for="exampleFormControlTextarea" class="form-label">Description</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea" placeholder="Enter your description" rows="3">Hi I'm Anna Adame,It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is European languages are members of the same family.</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="hstack gap-2 justify-content-end">
+                                                            <button type="submit" class="btn btn-primary">Updates</button>
+                                                            <button type="button" class="btn btn-soft-success">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                </div>
+                                                <!--end row-->
+                                            </form>
+                                        </div>
+                                        <!--end tab-pane-->
+                                        <div class="tab-pane" id="changePassword" role="tabpanel">
+                                            <form action="javascript:void(0);">
+                                                <div class="row g-2">
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="oldpasswordInput" class="form-label">Old Password*</label>
+                                                            <input type="password" class="form-control" id="oldpasswordInput" placeholder="Enter current password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="newpasswordInput" class="form-label">New Password*</label>
+                                                            <input type="password" class="form-control" id="newpasswordInput" placeholder="Enter new password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-4">
+                                                        <div>
+                                                            <label for="confirmpasswordInput" class="form-label">Confirm Password*</label>
+                                                            <input type="password" class="form-control" id="confirmpasswordInput" placeholder="Confirm password">
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <a href="javascript:void(0);" class="link-primary text-decoration-underline">Forgot Password ?</a>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                    <div class="col-lg-12">
+                                                        <div class="text-end">
+                                                            <button type="submit" class="btn btn-success">Change Password</button>
+                                                        </div>
+                                                    </div>
+                                                    <!--end col-->
+                                                </div>
+                                                <!--end row-->
+                                            </form>
+                                            
+                                        </div>
+                                        <!--end tab-pane-->
+
+                                        <!--end tab-pane-->
+                                        <div class="tab-pane" id="loginhistory" role="tabpanel">
+                                            <div class="mt-4 mb-3 border-bottom pb-2">
+                                                <div class="float-end">
+                                                    <a href="javascript:void(0);" class="link-primary">All Logout</a>
+                                                </div>
+                                                <h5 class="card-title">Login History</h5>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="fas fa-mobile"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6 class="fs-15">iPhone 12 Pro</h6>
+                                                    <p class="text-muted mb-0">Los Angeles, United States - March 16 at 2:47PM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="fas fa-mobile"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6 class="fs-15">Apple iPad Pro</h6>
+                                                    <p class="text-muted mb-0">Washington, United States - November 06 at 10:43AM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="fas fa-mobile"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6 class="fs-15">Galaxy S21 Ultra 5G</h6>
+                                                    <p class="text-muted mb-0">Conneticut, United States - June 12 at 3:24PM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0 avatar-sm">
+                                                    <div class="avatar-title bg-light text-primary rounded-3 fs-18">
+                                                        <i class="fas fa-mobile"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h6 class="fs-15">Dell Inspiron 14</h6>
+                                                    <p class="text-muted mb-0">Phoenix, United States - July 26 at 8:10AM</p>
+                                                </div>
+                                                <div>
+                                                    <a href="javascript:void(0);">Logout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+ 
+
+                                        <div class="tab-pane" id="experience" role="tabpanel">
+                                            <form>
+                                                <div id="newlink">
+                                                    <div id="1">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label for="jobTitle" class="form-label">Job Title</label>
+                                                                    <input type="text" class="form-control" id="jobTitle" placeholder="Job title" value="Lead Designer / Developer">
+                                                                </div>
+                                                            </div>
+                                                            <!--end col-->
+                                                            <div class="col-lg-6">
+                                                                <div class="mb-3">
+                                                                    <label for="companyName" class="form-label">Company Name</label>
+                                                                    <input type="text" class="form-control" id="companyName" placeholder="Company name" value="Themesbrand">
+                                                                </div>
+                                                            </div>
+                                                            <!--end col-->
+                                                            <div class="col-lg-6">
+                                                                <div class="mb-3">
+                                                                    <label for="experienceYear" class="form-label">Experience Years</label>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-5">
+                                                                            <select class="form-control" data-choices data-choices-search-false name="experienceYear" id="experienceYear">
+                                                                                <option value="">Select years</option>
+                                                                                <option value="Choice 1">2001</option>
+                                                                                <option value="Choice 2">2002</option>
+                                                                                <option value="Choice 3">2003</option>
+                                                                                <option value="Choice 4">2004</option>
+                                                                                <option value="Choice 5">2005</option>
+                                                                                <option value="Choice 6">2006</option>
+                                                                                <option value="Choice 7">2007</option>
+                                                                                <option value="Choice 8">2008</option>
+                                                                                <option value="Choice 9">2009</option>
+                                                                                <option value="Choice 10">2010</option>
+                                                                                <option value="Choice 11">2011</option>
+                                                                                <option value="Choice 12">2012</option>
+                                                                                <option value="Choice 13">2013</option>
+                                                                                <option value="Choice 14">2014</option>
+                                                                                <option value="Choice 15">2015</option>
+                                                                                <option value="Choice 16">2016</option>
+                                                                                <option value="Choice 17" selected>2017</option>
+                                                                                <option value="Choice 18">2018</option>
+                                                                                <option value="Choice 19">2019</option>
+                                                                                <option value="Choice 20">2020</option>
+                                                                                <option value="Choice 21">2021</option>
+                                                                                <option value="Choice 22">2022</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <!--end col-->
+                                                                        <div class="col-auto align-self-center">
+                                                                            to
+                                                                        </div>
+                                                                        <!--end col-->
+                                                                        <div class="col-lg-5">
+                                                                            <select class="form-control" data-choices data-choices-search-false name="choices-single-default2">
+                                                                                <option value="">Select years</option>
+                                                                                <option value="Choice 1">2001</option>
+                                                                                <option value="Choice 2">2002</option>
+                                                                                <option value="Choice 3">2003</option>
+                                                                                <option value="Choice 4">2004</option>
+                                                                                <option value="Choice 5">2005</option>
+                                                                                <option value="Choice 6">2006</option>
+                                                                                <option value="Choice 7">2007</option>
+                                                                                <option value="Choice 8">2008</option>
+                                                                                <option value="Choice 9">2009</option>
+                                                                                <option value="Choice 10">2010</option>
+                                                                                <option value="Choice 11">2011</option>
+                                                                                <option value="Choice 12">2012</option>
+                                                                                <option value="Choice 13">2013</option>
+                                                                                <option value="Choice 14">2014</option>
+                                                                                <option value="Choice 15">2015</option>
+                                                                                <option value="Choice 16">2016</option>
+                                                                                <option value="Choice 17">2017</option>
+                                                                                <option value="Choice 18">2018</option>
+                                                                                <option value="Choice 19">2019</option>
+                                                                                <option value="Choice 20" selected>2020</option>
+                                                                                <option value="Choice 21">2021</option>
+                                                                                <option value="Choice 22">2022</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <!--end col-->
+                                                                    </div>
+                                                                    <!--end row-->
+                                                                </div>
+                                                            </div>
+                                                            <!--end col-->
+                                                            <div class="col-lg-12">
+                                                                <div class="mb-3">
+                                                                    <label for="jobDescription" class="form-label">Job Description</label>
+                                                                    <textarea class="form-control" id="jobDescription" rows="3" placeholder="Enter description">You always want to make sure that your fonts work well together and try to limit the number of fonts you use to three or less. Experiment and play around with the fonts that you already have in the software you're working with reputable font websites. </textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!--end col-->
+                                                            <div class="hstack gap-2 justify-content-end">
+                                                                <a class="btn btn-success" href="javascript:deleteEl(1)">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                        <!--end row-->
+                                                    </div>
+                                                </div>
+                                                <div id="newForm" style="display: none;">
+
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="hstack gap-2">
+                                                        <button type="submit" class="btn btn-success">Update</button>
+                                                        <a href="javascript:new_link()" class="btn btn-primary">Add New</a>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                            </form>
+                                        </div>
+                                        <!--end tab-pane-->
+                                        <div class="tab-pane" id="privacy" role="tabpanel">
+                                            <div class="mb-4 pb-2">
+                                                <h5 class="card-title text-decoration-underline mb-3">Security:</h5>
+                                                <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="fs-15 mb-1">Two-factor Authentication</h6>
+                                                        <p class="text-muted">Two-factor authentication is an enhanced security meansur. Once enabled, you'll be required to give two types of identification when you log into Google Authentication and SMS are Supported.</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0 ms-sm-3">
+                                                        <a href="javascript:void(0);" class="btn btn-sm btn-primary">Enable Two-facor Authentication</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="fs-15 mb-1">Secondary Verification</h6>
+                                                        <p class="text-muted">The first factor is a password and the second commonly includes a text with a code sent to your smartphone, or biometrics using your fingerprint, face, or retina.</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0 ms-sm-3">
+                                                        <a href="javascript:void(0);" class="btn btn-sm btn-primary">Set up secondary method</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column flex-sm-row mb-4 mb-sm-0 mt-2">
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="fs-15 mb-1">Backup Codes</h6>
+                                                        <p class="text-muted mb-sm-0">A backup code is automatically generated for you when you turn on two-factor authentication through your iOS or Android Twitter app. You can also generate a backup code on twitter.com.</p>
+                                                    </div>
+                                                    <div class="flex-shrink-0 ms-sm-3">
+                                                        <a href="javascript:void(0);" class="btn btn-sm btn-primary">Generate backup codes</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h5 class="card-title text-decoration-underline mb-3">Application Notifications:</h5>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <label for="directMessage" class="form-check-label fs-14">Direct messages</label>
+                                                            <p class="text-muted">Messages from people you follow</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="directMessage" checked />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-15" for="desktopNotification">
+                                                                Show desktop notifications
+                                                            </label>
+                                                            <p class="text-muted">Choose the option you want as your default setting. Block a site: Next to "Not allowed to send notifications," click Add.</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="desktopNotification" checked />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-15" for="emailNotification">
+                                                                Show email notifications
+                                                            </label>
+                                                            <p class="text-muted"> Under Settings, choose Notifications. Under Select an account, choose the account to enable notifications for. </p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="emailNotification" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-15" for="chatNotification">
+                                                                Show chat notifications
+                                                            </label>
+                                                            <p class="text-muted">To prevent duplicate mobile notifications from the Gmail and Chat apps, in settings, turn off Chat notifications.</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" role="switch" id="chatNotification" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex mt-2">
+                                                        <div class="flex-grow-1">
+                                                            <label class="form-check-label fs-15" for="purchaesNotification">
+                                                                Show purchase notifications
+                                                            </label>
+                                                            <p class="text-muted">Get real-time purchase alerts to protect yourself from fraudulent charges.</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    role="switch" id="purchaesNotification" />
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title text-decoration-underline mb-3">Delete This Account:</h5>
+                                                <p class="text-muted">Go to the Data & Privacy section of your profile Account. Scroll to "Your data & privacy options." Delete your Profile Account. Follow the instructions to delete your account :</p>
+                                                <div>
+                                                    <input type="password" class="form-control" id="passwordInput" placeholder="Enter your password" value="make@321654987" style="max-width: 265px;">
+                                                </div>
+                                                <div class="hstack gap-2 mt-3">
+                                                    <a href="javascript:void(0);" class="btn btn-soft-danger">Close & Delete This Account</a>
+                                                    <a href="javascript:void(0);" class="btn btn-light">Cancel</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Input Example</h4>
+                                    <div class="flex-shrink-0">
+                                        <div class="form-check form-switch form-switch-right form-switch-md">
+                                            <label for="form-grid-showcode" class="form-label text-muted">Show Code</label>
+                                            <input class="form-check-input code-switcher" type="checkbox" id="form-grid-showcode">
+                                        </div>
+                                    </div>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="basiInput" class="form-label">Basic Input</label>
+                                                    <input type="password" class="form-control" id="basiInput">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="labelInput" class="form-label">Input with Label</label>
+                                                    <input type="password" class="form-control" id="labelInput">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="placeholderInput" class="form-label">Input with Placeholder</label>
+                                                    <input type="password" class="form-control" id="placeholderInput" placeholder="Placeholder">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="valueInput" class="form-label">Input with Value</label>
+                                                    <input type="text" class="form-control" id="valueInput" value="Input value">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="readonlyPlaintext" class="form-label">Readonly Plain Text Input</label>
+                                                    <input type="text" class="form-control-plaintext" id="readonlyPlaintext" value="Readonly input" readonly>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="readonlyInput" class="form-label">Readonly Input</label>
+                                                    <input type="text" class="form-control" id="readonlyInput" value="Readonly input" readonly>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="disabledInput" class="form-label">Disabled Input</label>
+                                                    <input type="text" class="form-control" id="disabledInput" value="Disabled input" disabled>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="iconInput" class="form-label">Input with Icon</label>
+                                                    <div class="form-icon">
+                                                        <input type="email" class="form-control form-control-icon" id="iconInput" placeholder="example@gmail.com">
+                                                        <i class="ri-mail-unread-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="iconrightInput" class="form-label">Input with Icon Right</label>
+                                                    <div class="form-icon right">
+                                                        <input type="email" class="form-control form-control-icon" id="iconrightInput" placeholder="example@gmail.com">
+                                                        <i class="ri-mail-unread-line"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="exampleInputdate" class="form-label">Input Date</label>
+                                                    <input type="date" class="form-control" id="exampleInputdate">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="exampleInputtime" class="form-label">Input Time</label>
+                                                    <input type="time" class="form-control" id="exampleInputtime">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="exampleInputpassword" class="form-label">Input Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputpassword" value="44512465">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="exampleFormControlTextarea5" class="form-label">Example Textarea</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="formtextInput" class="form-label">Form Text</label>
+                                                    <input type="password" class="form-control" id="formtextInput">
+                                                    <div id="passwordHelpBlock" class="form-text">
+                                                        Must be 8-20 characters long.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="colorPicker" class="form-label">Color Picker</label>
+                                                    <input type="color" class="form-control form-control-color w-100" id="colorPicker" value="#364574">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="borderInput" class="form-label">Input Border Style</label>
+                                                    <input type="text" class="form-control border-dashed" id="borderInput" placeholder="Enter your name">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <label for="exampleDataList" class="form-label">Datalist example</label>
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search your country...">
+                                                <datalist id="datalistOptions">
+                                                    <option value="Switzerland">
+                                                    <option value="New York">
+                                                    <option value="France">
+                                                    <option value="Spain">
+                                                    <option value="Chicago">
+                                                    <option value="Bulgaria">
+                                                    <option value="Hong Kong">
+                                                </datalist>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div>
+                                                    <label for="exampleInputrounded" class="form-label">Rounded Input</label>
+                                                    <input type="text" class="form-control rounded-pill" id="exampleInputrounded" placeholder="Enter your name">
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="firstnamefloatingInput" placeholder="Enter your firstname">
+                                                    <label for="firstnamefloatingInput">Floating Input</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                    <div class="d-none code-view">
+                                        <pre class="language-markup" style="height: 450px;"><code>&lt;!-- Basic Input --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;basiInput&quot; class=&quot;form-label&quot;&gt;Basic Input&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;basiInput&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input with Label --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;labelInput&quot; class=&quot;form-label&quot;&gt;Input with Label&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;labelInput&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input with Placeholder --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;placeholderInput&quot; class=&quot;form-label&quot;&gt;Input with Placeholder&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;placeholderInput&quot; placeholder=&quot;Placeholder&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input with Value --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;valueInput&quot; class=&quot;form-label&quot;&gt;Input with Value&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;valueInput&quot; value=&quot;Input value&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Readonly Plain Text Input --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;readonlyPlaintext&quot; class=&quot;form-label&quot;&gt;Readonly Plain Text Input&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control-plaintext&quot; id=&quot;readonlyPlaintext&quot; value=&quot;Readonly input&quot; readonly&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Readonly Input --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;readonlyInput&quot; class=&quot;form-label&quot;&gt;Readonly Input&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;readonlyInput&quot; value=&quot;Readonly input&quot; readonly&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Disabled Input --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;disabledInput&quot; class=&quot;form-label&quot;&gt;Disabled Input&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;disabledInput&quot; value=&quot;Disabled input&quot; disabled&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input with Icon --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;iconInput&quot; class=&quot;form-label&quot;&gt;Input with Icon&lt;/label&gt;
+    &lt;div class=&quot;form-icon&quot;&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control form-control-icon&quot; id=&quot;iconInput&quot; placeholder=&quot;example@gmail.com&quot;&gt;
+        &lt;i class=&quot;ri-mail-unread-line&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input with Icon Right --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;iconrightInput&quot; class=&quot;form-label&quot;&gt;Input with Icon Right&lt;/label&gt;
+    &lt;div class=&quot;form-icon right&quot;&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control form-control-icon&quot; id=&quot;iconrightInput&quot; placeholder=&quot;example@gmail.com&quot;&gt;
+        &lt;i class=&quot;ri-mail-unread-line&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input Date --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;exampleInputdate&quot; class=&quot;form-label&quot;&gt;Input Date&lt;/label&gt;
+    &lt;input type=&quot;date&quot; class=&quot;form-control&quot; id=&quot;exampleInputdate&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input Time --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;exampleInputtime&quot; class=&quot;form-label&quot;&gt;Input Time&lt;/label&gt;
+    &lt;input type=&quot;time&quot; class=&quot;form-control&quot; id=&quot;exampleInputtime&quot; value=&quot;08:56 AM&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input Password --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;exampleInputpassword&quot; class=&quot;form-label&quot;&gt;Input Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputpassword&quot; value=&quot;44512465&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Example Textarea --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;exampleFormControlTextarea5&quot; class=&quot;form-label&quot;&gt;Example Textarea&lt;/label&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;exampleFormControlTextarea5&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Form Text --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;formtextInput&quot; class=&quot;form-label&quot;&gt;Form Text&lt;/label&gt;
+    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;formtextInput&quot;&gt;
+    &lt;div id=&quot;passwordHelpBlock&quot; class=&quot;form-text&quot;&gt;
+        Must be 8-20 characters long.
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Color Picker --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;colorPicker&quot; class=&quot;form-label&quot;&gt;Color Picker&lt;/label&gt;
+    &lt;input type=&quot;color&quot; class=&quot;form-control form-control-color w-100&quot; id=&quot;colorPicker&quot; value=&quot;#364574&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Input Border Style --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;borderInput&quot; class=&quot;form-label&quot;&gt;Input Border Style&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control border-dashed&quot; id=&quot;borderInput&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Datalist example --&gt;
+&lt;label for=&quot;exampleDataList&quot; class=&quot;form-label&quot;&gt;Datalist example&lt;/label&gt;
+&lt;input class=&quot;form-control&quot; list=&quot;datalistOptions&quot; id=&quot;exampleDataList&quot; placeholder=&quot;Search your country...&quot;&gt;
+&lt;datalist id=&quot;datalistOptions&quot;&gt;
+    &lt;option value=&quot;Switzerland&quot;&gt;
+    &lt;option value=&quot;New York&quot;&gt;
+    &lt;option value=&quot;France&quot;&gt;
+    &lt;option value=&quot;Spain&quot;&gt;
+    &lt;option value=&quot;Chicago&quot;&gt;
+    &lt;option value=&quot;Bulgaria&quot;&gt;
+    &lt;option value=&quot;Hong Kong&quot;&gt;
+&lt;/datalist&gt;</code>
+
+<code>&lt;!-- Rounded Input --&gt;
+&lt;div&gt;
+    &lt;label for=&quot;exampleInputrounded&quot; class=&quot;form-label&quot;&gt;Rounded Input&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control rounded-pill&quot; id=&quot;exampleInputrounded&quot; placeholder=&quot;Enter your name&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Floating Input --&gt;
+&lt;div class=&quot;form-floating&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;firstnamefloatingInput&quot; placeholder=&quot;Enter your firstname&quot;&gt;
+    &lt;label for=&quot;firstnamefloatingInput&quot;&gt;Floating Input&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Input Group</h4>
+                                    <div class="flex-shrink-0">
+                                        <div class="form-check form-switch form-switch-right form-switch-md">
+                                            <label for="input-group-showcode" class="form-label text-muted">Show Code</label>
+                                            <input class="form-check-input code-switcher" type="checkbox" id="input-group-showcode">
+                                        </div>
+                                    </div>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="live-preview">
+                                        <div>
+                                            <h5 class="fs-15">Basic example</h5>
+                                            <p class="text-muted">Use <code>input-group</code> class to div element which contains input attribute to wrap a default input in the group.</p>
+                                            <div class="row g-3">
+                                                <div class="col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">$</span>
+                                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                        <span class="input-group-text">.00</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">With textarea</span>
+                                                        <textarea class="form-control" aria-label="With textarea" rows="2"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4">
+                                            <h5 class="fs-15">Wrapping</h5>
+                                            <p class="text-muted">Input groups wrap by default via <code>flex-wrap: wrap</code> in order to accommodate custom form field validation within an input group. You may disable this with <code>flex-nowrap</code> class.</p>
+                                            <div class="input-group flex-nowrap">
+                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-none code-view">
+                                        <pre class="language-markup" style="height: 275px;"><code>&lt;!-- Basic example --&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+&lt;/div&gt;</code>
+<code>&lt;div class=&quot;input-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;basic-addon2&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+&lt;/div&gt;</code>
+<code>&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Amount (to the nearest dollar)&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+&lt;/div&gt;</code>
+<code>&lt;div class=&quot;input-group&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Server&quot; aria-label=&quot;Server&quot;&gt;
+&lt;/div&gt;</code>
+<code>&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;With textarea&lt;/span&gt;
+    &lt;textarea class=&quot;form-control&quot; aria-label=&quot;With textarea&quot; rows=&quot;2&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code>
+<code>&lt;label for=&quot;basic-url&quot; class=&quot;form-label&quot;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;basic-url&quot; aria-describedby=&quot;basic-addon3&quot;&gt;
+&lt;/div&gt;</code>
+
+<code>&lt;!-- Wrapping --&gt;
+&lt;div class=&quot;input-group flex-nowrap&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot; id=&quot;addon-wrapping&quot;&gt;@&lt;/span&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;addon-wrapping&quot;&gt;
+&lt;/div&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Form Grid</h4>
+                                    <div class="flex-shrink-0">
+                                        <div class="form-check form-switch form-switch-right form-switch-md">
+                                            <label for="form-grid-showcode" class="form-label text-muted">Show Code</label>
+                                            <input class="form-check-input code-switcher" type="checkbox" id="form-grid-showcode">
+                                        </div>
+                                    </div>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <p class="text-muted">More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options. <span class="fw-medium">Requires the <code>$enable-grid-classes</code> Sass variable to be enabled</span> (on by default).</p>
+                                    <div class="live-preview">
+                                        <form action="javascript:void(0);">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="firstNameinput" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" placeholder="Enter your firstname" id="firstNameinput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="lastNameinput" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" placeholder="Enter your lastname" id="lastNameinput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="compnayNameinput" class="form-label">Company Name</label>
+                                                        <input type="text" class="form-control" placeholder="Enter company name" id="compnayNameinput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="phonenumberInput" class="form-label">Phone Number</label>
+                                                        <input type="tel" class="form-control" placeholder="+(245) 451 45123" id="phonenumberInput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="emailidInput" class="form-label">Email Address</label>
+                                                        <input type="email" class="form-control" placeholder="example@gamil.com" id="emailidInput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="address1ControlTextarea" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" placeholder="Address 1" id="address1ControlTextarea">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="citynameInput" class="form-label">City</label>
+                                                        <input type="email" class="form-control" placeholder="Enter your city" id="citynameInput">
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="ForminputState" class="form-label">State</label>
+                                                        <select id="ForminputState" class="form-select" data-choices data-choices-sorting="true">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-lg-12">
+                                                    <div class="text-end">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                            </div>
+                                            <!--end row-->
+                                        </form>
+                                    </div>
+                                    <div class="d-none code-view">
+                                        <pre class="language-markup" style="height: 375px;">
+<code>&lt;form action=&quot;javascript:void(0);&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;firstNameinput&quot; class=&quot;form-label&quot;&gt;First Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your firstname&quot; id=&quot;firstNameinput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;lastNameinput&quot; class=&quot;form-label&quot;&gt;Last Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your lastname&quot; id=&quot;lastNameinput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;compnayNameinput&quot; class=&quot;form-label&quot;&gt;Company Name&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Enter company name&quot; id=&quot;compnayNameinput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;phonenumberInput&quot; class=&quot;form-label&quot;&gt;Phone Number&lt;/label&gt;
+                &lt;input type=&quot;tel&quot; class=&quot;form-control&quot; placeholder=&quot;+(245) 451 45123&quot; id=&quot;phonenumberInput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;emailidInput&quot; class=&quot;form-label&quot;&gt;Email Address&lt;/label&gt;
+                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;example@gamil.com&quot; id=&quot;emailidInput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;address1ControlTextarea&quot; class=&quot;form-label&quot;&gt;Address&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Address 1&quot; id=&quot;address1ControlTextarea&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;citynameInput&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
+                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your city&quot; id=&quot;citynameInput&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-6&quot;&gt;
+            &lt;div class=&quot;mb-3&quot;&gt;
+                &lt;label for=&quot;ForminputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
+                &lt;select id=&quot;ForminputState&quot; class=&quot;form-select&quot;&gt;
+                    &lt;option selected&gt;Choose...&lt;/option&gt;
+                    &lt;option&gt;...&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+        &lt;div class=&quot;col-lg-12&quot;&gt;
+            &lt;div class=&quot;text-end&quot;&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!--end col--&gt;
+    &lt;/div&gt;&lt;!--end row--&gt;
+&lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+
+                        <div class="col-xxl-6">
+                            <div class="card">
+                                <div class="card-header align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Gutters</h4>
+                                    <div class="flex-shrink-0">
+                                        <div class="form-check form-switch form-switch-right form-switch-md">
+                                            <label for="gutters-showcode" class="form-label text-muted">Show Code</label>
+                                            <input class="form-check-input code-switcher" type="checkbox" id="gutters-showcode">
+                                        </div>
+                                    </div>
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+                                    <p class="text-muted">By adding <a href="https://themesbrand.com/docs/5.1/layout/gutters/" class="text-decoration-underline">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <span class="fw-medium">Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</span> (on by default).</p>
+                                    <div class="live-preview">
+                                        <form action="javascript:void(0);" class="row g-3">
+                                            <div class="col-md-12">
+                                                <label for="fullnameInput" class="form-label">Name</label>
+                                                <input type="text" class="form-control" id="fullnameInput" placeholder="Enter your name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select" data-choices data-choices-sorting="true">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip" placeholder="Zin code">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Check me out
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="text-end">
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="d-none code-view">
+                                        <pre class="language-markup" style="height: 375px;">
+<code>&lt;form action=&quot;javascript:void(0);&quot; class=&quot;row g-3&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+        &lt;label for=&quot;fullnameInput&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;fullnameInput&quot; placeholder=&quot;Enter your name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;label for=&quot;inputEmail4&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail4&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;label for=&quot;inputPassword4&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword4&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;label for=&quot;inputAddress&quot; class=&quot;form-label&quot;&gt;Address&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress&quot; placeholder=&quot;1234 Main St&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;label for=&quot;inputAddress2&quot; class=&quot;form-label&quot;&gt;Address 2&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress2&quot; placeholder=&quot;Apartment, studio, or floor&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;label for=&quot;inputCity&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputCity&quot; placeholder=&quot;Enter your city&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;label for=&quot;inputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
+        &lt;select id=&quot;inputState&quot; class=&quot;form-select&quot;&gt;
+            &lt;option selected&gt;Choose...&lt;/option&gt;
+            &lt;option&gt;...&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;label for=&quot;inputZip&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputZip&quot; placeholder=&quot;Zin code&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;form-check&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;gridCheck&quot;&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;gridCheck&quot;&gt;
+                Check me out
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;text-end&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div>
+                    <!--end row-->
+
+                </div>  
+                
+            </div>
+
+        </div>
+
+        <div class="row copyrights">
+            <div class="col-lg-6">
+                <span>2024 © Stohos</span>
+            </div>
+            <div class="col-lg-6 text-end">
+                <span>Powered By Stohos Business Suite</span>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

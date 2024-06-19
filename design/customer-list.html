@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Customer List</title>
+    <!--datatable css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+    <!--datatable responsive css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+    <script src="assets/js/layout.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-xxl position-relative d-flex p-0">
+        <div class="sidebar">
+            <nav class="navbar navbar-light navigation-vertical">
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="navbar-brand mb-3">
+                    <img src="img/logo.png">
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fas fa-times"></i>
+                </a>
+                <button class="btn primary-btn"><i class="fas fa-plus"></i> Create</button>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fas fa-chart-pie"></i> Overview</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fas fa-calendar-alt"></i> Calendar</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item"><i class="fas fa-hotel"></i> Rental</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-file"></i> Leasing</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-users"></i> People</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-tasks"></i> Tasks & Maintenance</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-hand-holding-usd"></i> Accounting</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-volume-down"></i> Communications</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-edit"></i> Notes</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-folder-open"></i> Files</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-clipboard-list"></i> Reports</a>
+                </div>
+
+                <div class="navbar-nav w-100 bottom-nav">
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-rocket"></i> Get Started</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-bell"></i> Notification</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-question-circle"></i> Help</a>
+                    <a href="#" class="nav-item nav-link"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#" class="nav-item nav-link"><img src="img/user.jpg"> Dave Kaminski</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content dashboard-right-col">
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <p class="wlcm-txt"><span>Hi Dave,</span> Welcome Back!</p>
+                <div class="navbar-nav align-items-center ms-auto top-bar-navigation mob-hide">
+                    <select>
+                        <option>Property</option>
+                        <option>Property</option>
+                        <option>Property</option>
+                    </select>
+
+                    <select>
+                        <option>Portfolio</option>
+                        <option>Portfolio</option>
+                        <option>Portfolio</option>
+                    </select>
+
+                    <select>
+                        <option>View As</option>
+                        <option>View As</option>
+                        <option>View As</option>
+                    </select>
+
+                    <button class="btn"><i class="fas fa-cog"></i> Customize Dashboard</button>
+                </div>
+            </nav>
+
+            <div class="container mob-show">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="navbar-nav align-items-center ms-auto top-bar-navigation">
+                        <select>
+                            <option>Property</option>
+                            <option>Property</option>
+                            <option>Property</option>
+                        </select>
+    
+                        <select>
+                            <option>Portfolio</option>
+                            <option>Portfolio</option>
+                            <option>Portfolio</option>
+                        </select>
+
+                        <select>
+                            <option>View As</option>
+                            <option>View As</option>
+                        <option>View As</option>
+                        </select>
+                      </div>
+                      <button class="btn w-100"><i class="fas fa-cog"></i> Customize Dashboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid pt-4 px-4">
+                
+              <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="position-relative mx-n4 mt-n4">
+                        <div class="profile-wid-bg profile-setting-img">
+                            <img src="img/profile-bg.jpg" class="profile-wid-img" alt="">
+                            <div class="headings-top">
+                              <h1>Customer List</h1>
+                              <h4>List of all Registerd Customers</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card customer-list-table">
+                                <div class="card-body table-responsive">
+                                    <table id="example" class="table table-bordered dt-responsive nowrap align-middle mdl-data-table" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Project</th>
+                                                <th>Task</th>
+                                                <th>Client Name</th>
+                                                <th>Assigned To</th>
+                                                <th>Due Date</th>
+                                                <th>Status</th>
+                                                <th>Priority</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>VLZ-452</td>
+                                                <td>Symox v1.0.0</td>
+                                                <td><a href="#!">Add Dynamic Contact List</a></td>
+                                                <td>RH Nichols</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-3.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>03 Oct, 2021</td>
+                                                <td><span class="badge bg-info-subtle text-info">Re-open</span></td>
+                                                <td><span class="badge bg-danger">High</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-453</td>
+                                                <td>Doot - Chat App Template</td>
+                                                <td><a href="#!">Additional Calendar</a></td>
+                                                <td>Diana Kohler</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-4.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-5.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>05 Oct, 2021</td>
+                                                <td><span class="badge bg-secondary-subtle text-secondary">On-Hold</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-454</td>
+                                                <td>Qexal - Landing Page</td>
+                                                <td><a href="#!">Make a creating an account profile</a></td>
+                                                <td>David Nichols</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-8.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>27 April, 2022</td>
+                                                <td><span class="badge bg-danger-subtle text-danger">Closed</span></td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-455</td>
+                                                <td>Dorsin - Landing Page</td>
+                                                <td><a href="#!">Apologize for shopping Error!</a></td>
+                                                <td>Tonya Noble</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>14 June, 2021</td>
+                                                <td><span class="badge bg-warning-subtle text-warning">Inprogress</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-456</td>
+                                                <td>Minimal - v2.1.0</td>
+                                                <td><a href="#!">Support for theme</a></td>
+                                                <td>Donald Palmer</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-2.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>25 June, 2021</td>
+                                                <td><span class="badge bg-danger-subtle text-danger">Closed</span></td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-457</td>
+                                                <td>Dason - v1.0.0</td>
+                                                <td><a href="#!">Benner design for FB & Twitter</a></td>
+                                                <td>Jennifer Carter</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-5.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-8.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>14 Aug, 2021</td>
+                                                <td><span class="badge bg-warning-subtle text-warning">Inprogress</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-458</td>
+                                                <td>Velzon v1.6.0</td>
+                                                <td><a href="#!">Add datatables</a></td>
+                                                <td>James Morris</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-4.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-5.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>12 March, 2022</td>
+                                                <td><span class="badge bg-primary-subtle text-primary">Open</span></td>
+                                                <td><span class="badge bg-danger">High</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-460</td>
+                                                <td>Skote v2.0.0</td>
+                                                <td><a href="#!">Support for theme</a></td>
+                                                <td>Nancy Martino</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-3.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-10.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-9.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-9.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>28 Feb, 2022</td>
+                                                <td><span class="badge bg-secondary-subtle text-secondary">On-Hold</span></td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-461</td>
+                                                <td>Velzon v1.0.0</td>
+                                                <td><a href="#!">Form submit issue</a></td>
+                                                <td>Grace Coles</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-5.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-9.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-9.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-10.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>07 Jan, 2022</td>
+                                                <td><span class="badge bg-success-subtle text-success">New</span></td>
+                                                <td><span class="badge bg-danger">High</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-462</td>
+                                                <td>Minimal - v2.2.0</td>
+                                                <td><a href="#!">Edit customer testimonial</a></td>
+                                                <td>Freda</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-2.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>16 Aug, 2021</td>
+                                                <td><span class="badge bg-danger-subtle text-danger">Closed</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-454</td>
+                                                <td>Qexal - Landing Page</td>
+                                                <td><a href="#!">Make a creating an account profile</a></td>
+                                                <td>David Nichols</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-8.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>27 April, 2022</td>
+                                                <td><span class="badge bg-danger-subtle text-danger">Closed</span></td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-455</td>
+                                                <td>Dorsin - Landing Page</td>
+                                                <td><a href="#!">Apologize for shopping Error!</a></td>
+                                                <td>Tonya Noble</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>14 June, 2021</td>
+                                                <td><span class="badge bg-warning-subtle text-warning">Inprogress</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-456</td>
+                                                <td>Minimal - v2.1.0</td>
+                                                <td><a href="#!">Support for theme</a></td>
+                                                <td>Donald Palmer</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-2.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>25 June, 2021</td>
+                                                <td><span class="badge bg-danger-subtle text-danger">Closed</span></td>
+                                                <td><span class="badge bg-success">Low</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>VLZ-457</td>
+                                                <td>Dason - v1.0.0</td>
+                                                <td><a href="#!">Benner design for FB & Twitter</a></td>
+                                                <td>Jennifer Carter</td>
+                                                <td>
+                                                    <div class="avatar-group">
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-5.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-6.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-7.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                            
+                                                        <a href="javascript: void(0);" class="avatar-group-item" data-img="avatar-8.jpg" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" title="Username">
+                                                            <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-xxs">
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td>14 Aug, 2021</td>
+                                                <td><span class="badge bg-warning-subtle text-warning">Inprogress</span></td>
+                                                <td><span class="badge bg-info">Medium</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                
+            </div>
+
+        </div>
+
+        <div class="row copyrights">
+            <div class="col-lg-6">
+                <span>2024 © Stohos</span>
+            </div>
+            <div class="col-lg-6 text-end">
+                <span>Powered By Stohos Business Suite</span>
+            </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="../../../../code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--datatable js-->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="../../../../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+
+    <script src="assets/js/pages/datatables.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
